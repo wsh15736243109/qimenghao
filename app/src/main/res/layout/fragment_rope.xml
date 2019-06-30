@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".view.ui.fragment.rope_fragments.RopeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:background="@mipmap/total_bg"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/home"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/myDrill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:text="@string/my_drill"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:id="@+id/tot_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="38654"
+                        android:textColor="@color/white"
+                        android:textSize="52dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tot_num"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toStartOf="@+id/tot_num"
+                        android:text="@string/tot"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tot_num"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/tot_num"
+                        android:text="@string/ge"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="@string/tot_count"
+                    android:textColor="@color/white"
+                    android:textSize="13dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tot_sport"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/tot_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="298"
+                            android:textColor="@color/white"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ci"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" />
+
+                        <ImageView
+                            android:id="@+id/myDrillIg"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="6dp"
+                            android:src="@mipmap/right_v_cricle" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/total_bg_sm"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/tot2"
+                        android:textColor="#a9babf"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tot_min"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="6584"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/minutes"
+                        android:textColor="#a9babf"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/tot2"
+                        android:textColor="#a9babf"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tot_calorie"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="7894"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/calorie"
+                        android:textColor="#a9babf"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/tot2"
+                        android:textColor="#a9babf"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tot_day"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="92"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/ta"
+                        android:textColor="#a9babf"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:src="@mipmap/ad" />
+
+        <TextView
+            android:id="@+id/noLinkWarn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@mipmap/warn"
+            android:gravity="center"
+            android:text="@string/no_link"
+            android:textColor="@color/main_blue" />
+
+        <Button
+            android:id="@+id/startSport"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/start_button_bg"
+            android:text="@string/start_sport"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="10dp"
+            android:background="#f0f0f0" />
+
+        <TextView
+            android:id="@+id/learnClass"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:drawableEnd="@mipmap/right_v"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/learn_class"
+            android:textColor="#FF9D12"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="178dp"
+            android:background="@color/main_blue" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#f0f0f0" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="178dp"
+            android:background="@color/darkorchid" />
+
+
+    </LinearLayout>
+</ScrollView>

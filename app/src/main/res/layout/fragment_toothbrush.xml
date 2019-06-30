@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.ui.fragment.toothbrush_fragments.ToothbrushFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="330dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="@mipmap/toothbrush_tit_bg">
+
+            <RelativeLayout
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/circular_background"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/tot_brush_num"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/toothbrushNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/t1"
+                    android:text="80"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/toothbrushNum"
+                    android:gravity="center"
+                    android:text="@string/ci"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            app:cardUseCompatPadding="true"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sign_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/sign_in"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="@color/color4"
+                    android:text="@string/sign_in" />
+
+                <TextView
+                    android:id="@+id/alarmSet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/alarm_clock"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="@color/color4"
+                    android:text="@string/alarm_set" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/brush_time"
+            android:textSize="16dp"
+            android:textColor="@color/color4"
+            android:layout_marginLeft="45dp"/>
+
+        <TextView
+            android:id="@+id/brushTime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/color4"
+            android:text="2分06秒"
+            android:drawableRight="@mipmap/right_v"
+            android:layout_marginRight="45dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/noLinkWarn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@mipmap/warn"
+        android:padding="10dp"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="@string/no_link"
+        android:textColor="@color/main_blue"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

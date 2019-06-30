@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.activity.ScrollActivity">
+
+    <ezy.ui.view.BannerView
+        android:id="@+id/bv"
+        app:bvIsLoop="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:bvIsAuto="false"
+        app:bvIndicatorDrawable="@mipmap/cm"
+        app:bvIndicatorDrawableSelected="@mipmap/cs"
+        app:bvIndicatorWidth="16dp"
+        app:bvIndicatorHeight="16dp"
+        />
+
+
+</RelativeLayout>

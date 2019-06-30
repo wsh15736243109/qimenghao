@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/deviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="DEVICE"
+            android:textSize="13dp"
+            android:layout_marginLeft="15dp"
+            />
+        <ImageButton
+            android:id="@+id/alterDeviceName"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/edit_name"
+            android:background="@null"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/delDevice"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:background="@mipmap/ok_bg"
+            android:text="@string/del_device"
+            android:textColor="@color/red"
+            android:textSize="9dp"
+            android:layout_marginEnd="15dp"
+            />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

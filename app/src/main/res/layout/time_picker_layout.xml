@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardUseCompatPadding="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="@string/set_time"
+            android:textColor="@color/main_blue"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.aigestudio.wheelpicker.WheelPicker
+                android:id="@+id/minPicker"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                app:wheel_atmospheric="true"
+                app:wheel_cyclic="true"
+                app:wheel_data="@array/mins"
+                app:wheel_curved="true"
+                app:wheel_item_text_size="19dp"
+                app:wheel_selected_item_text_color="@color/main_blue"
+                app:wheel_visible_item_count="7"
+                app:wheel_item_space="12dp"
+                />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/hour"
+                android:textSize="18dp" />
+
+            <com.aigestudio.wheelpicker.WheelPicker
+                android:id="@+id/secondPicker"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                app:wheel_atmospheric="true"
+                app:wheel_cyclic="true"
+                app:wheel_curved="true"
+                app:wheel_item_text_size="19dp"
+                app:wheel_selected_item_text_color="@color/main_blue"
+                app:wheel_visible_item_count="7"
+                app:wheel_item_space="12dp" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/minute"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/commit"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/ok_bg"
+            android:text="@string/commit"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

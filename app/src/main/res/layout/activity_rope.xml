@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.activity.rope_activitys.RopeActivity"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/frame_area"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/rbRope"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/radiobutton_rope_icon"
+            android:gravity="center"
+            android:text="@string/sport"
+            android:textColor="@color/radiobutton_textcolor"
+            android:textSize="15dp"
+            android:paddingTop="2dp"
+            android:background="@drawable/rb_bg"/>
+
+        <RadioButton
+            android:id="@+id/rbFind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radiobutton_find_icon"
+            android:gravity="center"
+            android:text="@string/find"
+            android:textColor="@color/radiobutton_textcolor"
+            android:textSize="15dp"
+            android:paddingTop="2dp"
+            android:background="@drawable/rb_bg"/>
+        <RadioButton
+            android:id="@+id/rbCommunity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radiobutton_community_icon"
+            android:gravity="center"
+            android:text="@string/community"
+            android:textColor="@color/radiobutton_textcolor"
+            android:textSize="15dp"
+            android:paddingTop="2dp"
+            android:background="@drawable/rb_bg"/>
+        <RadioButton
+            android:id="@+id/rbMyself"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radiobutton_home_icon"
+            android:gravity="center"
+            android:text="@string/myself"
+            android:textColor="@color/radiobutton_textcolor"
+            android:textSize="15dp"
+            android:paddingTop="2dp"
+            android:background="@drawable/rb_bg"/>
+    </RadioGroup>
+
+
+
+</LinearLayout>

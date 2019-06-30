@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp">
+
+        <TextView
+            android:id="@+id/awardTv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="终极大奖，自己决定奖励"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:background="@drawable/item_bg1"/>
+
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/markIv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignEnd="@+id/rl"
+        android:src="@mipmap/award_mark" />
+</RelativeLayout>
